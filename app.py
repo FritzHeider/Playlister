@@ -5,8 +5,10 @@ app = Flask(__name__)
 
 # OUR MOCK ARRAY OF PROJECTS
 playlists = [
-    { 'title': 'Cat Videos', 'description': 'Cats acting weird'},
-    { 'title': '80\'s Music', 'description': 'Don\'t stop believing! '}
+    { 'title': 'Doggo Videos', 'description': 'Doggoss acting weird'},
+    { 'title': '80\'s Music', 'description': 'Don\'t stop believing! '},
+    { 'title': '70\'s Music', 'description': 'All wrapped up in Blue! '},
+    { 'title': '60\'s Music', 'description': 'Lay lady lay '}
 ]
 
 @app.route('/')
