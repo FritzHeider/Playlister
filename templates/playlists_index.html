@@ -1,0 +1,10 @@
+<!-- templates/playlists_index.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>%%%%%Playlists88888</h1>
+    {% for what in playlists %}
+        <h2>{{ what.title }}</h2>
+        <small>{{ what.description }}</small>
+    {% endfor %}
+{% endblock %}
