@@ -5,9 +5,10 @@
     <h1>%%%%%Playlists88888</h1>
 
     <a href='/playlists/new'>New Playlist</a>
-    
+
     {% for what in playlists %}
         <h2>{{ what.title }}</h2>
         <small>{{ what.description }}</small>
+        <small>{{ what.videos }}</small>
     {% endfor %}
 {% endblock %}

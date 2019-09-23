@@ -34,7 +34,8 @@ def playlists_submit():
     """Submit a new playlist."""
     playlist = {
         'title': request.form.get('title'),
-        'description': request.form.get('description')
+        'description': request.form.get('description'),
+        'videos': request.form.get('videos').split()
     }
     playlists.insert_one(playlist)
     #print(request.form.to_dict())
