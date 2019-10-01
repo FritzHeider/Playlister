@@ -6,9 +6,9 @@
 
     <a href='/playlists/new'>New Playlist</a>
 
-    {% for what in playlists %}
-        <h2>{{ what.title }}</h2>
-        <small>{{ what.description }}</small>
-        <small>{{ what.videos }}</small>
+
+    {% for playlist in playlists %}
+        <h2><a href='/playlists/{{ playlist._id }}'>{{ playlist.title }}</a></h2>
+        <small>{{ playlist.description }}</small>
     {% endfor %}
-{% endblock %}
+    {% endblock %}
