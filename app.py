@@ -73,7 +73,7 @@ def destroy():
 
 @app.route('/playlists/comments', methods=['POST'])
 def comments_new():
-    """Submit a new comment."""
+    
         return 'playlists comment'
 
 if __name__ == '__main__':
